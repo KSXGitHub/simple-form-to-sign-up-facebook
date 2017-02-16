@@ -29,7 +29,7 @@ function main ({window, document}) {
   createChild('birthday_day', 1, 32)
 
   const actionURL = document.getElementById('action-url')
-  actionURL.value = form.action
+  actionURL.setAttribute('value', form.action)
   actionURL.addEventListener('change', () => {
     form.action = actionURL.value
   }, false)

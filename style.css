@@ -30,6 +30,10 @@ button[type="reset"] {
   background: red;
 }
 
+button:hover {
+  box-shadow: 0px 0px 2px black;
+}
+
 .little-space {
   display: block;
   height: 0.75em;
@@ -58,6 +62,21 @@ button[type="reset"] {
   border-style: solid;
   border-color: blue;
   background: white;
+}
+
+#main-form input:not([type='radio']):hover, #main-form select:hover {
+  border-color: red;
+}
+
+#main-form input:not([type='radio']):focus, #main-form select:focus {
+  outline: none;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: blue;
+  box-shadow: 0px 1px 0px blue;
 }
 
 #main-form label:not(.small) {
